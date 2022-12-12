@@ -20,6 +20,7 @@ if len(sys.argv) < 2:
 request = requests.get("https://"+sys.argv[1])
 print("\n"+str(request.headers))
 
+# get IP address
 gethost = socket.gethostbyname(sys.argv[1])
 print("\nThe IP address of "+sys.argv[1]+" is: "+gethost + "\n")
 
